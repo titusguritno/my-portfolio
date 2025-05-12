@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-20 bg-cyan-950 text-white min-h-screen">
+      <main className="w-full px-6 py-20 bg-slate-800 text-white min-h-screen">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Kiri: Teks */}
           <div className="flex-1">
@@ -18,7 +18,7 @@ export default function Home() {
             </h1>
             <p className="text-lg md:text-xl font-semibold text-emerald-400 mb-6">
               Front End Developer <span className="text-white">|</span> Web
-              Designer
+              Designer | IT Network
             </p>
             <p className="text-slate-300 mb-6 max-w-lg">
               I'm an experienced Front-End Developer specialising in UI/UX
@@ -36,7 +36,7 @@ export default function Home() {
               rel="noopener noreferrer"
               className="inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors mb-6"
             >
-              Download CV
+              Get CV
             </a>
 
             {/* Media Sosial */}
@@ -75,13 +75,13 @@ export default function Home() {
 
           {/* Kanan: Gambar */}
           <div className="flex-1 relative">
-            <div className="w-72 h-72 mx-auto relative z-10 rounded-full overflow-hidden border-4 border-emerald-400 rotate-12">
+            <div className="w-72 h-72 mx-auto relative z-10 rounded-xl overflow-hidden border-8 border-gradient-to-r from-emerald-400 to-teal-500 shadow-lg shadow-teal-300/50 transform hover:scale-105 transition-all duration-300">
               <Image
                 src="/images/profil.jpg"
                 alt="Profile"
                 width={300}
                 height={300}
-                className="object-cover w-full h-full -rotate-12"
+                className="object-cover w-full h-full"
               />
             </div>
           </div>

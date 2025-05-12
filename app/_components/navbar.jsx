@@ -3,9 +3,11 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation"; // <- tambahkan ini
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // <- untuk deteksi path aktif
 
   const navItems = [
     { label: "Home", href: "/" },
@@ -14,6 +16,8 @@ export default function Navbar() {
     { label: "Projects", href: "/projects" },
     { label: "Contact", href: "/contact" },
   ];
+
+  const isActive = (href) => pathname === href;
 
   return (
     <header className="bg-[#0f172a] text-white w-full z-50">
@@ -29,7 +33,11 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="hover:text-emerald-400 transition-colors"
+              className={`transition-colors ${
+                isActive(item.href)
+                  ? "text-emerald-400 font-semibold"
+                  : "hover:text-emerald-400"
+              }`}
             >
               {item.label}
             </Link>
@@ -54,7 +62,11 @@ export default function Navbar() {
               key={item.href}
               href={item.href}
               onClick={() => setIsOpen(false)}
-              className="block text-white hover:text-emerald-400 transition-colors"
+              className={`block transition-colors ${
+                isActive(item.href)
+                  ? "text-emerald-400 font-semibold"
+                  : "text-white hover:text-emerald-400"
+              }`}
             >
               {item.label}
             </Link>
