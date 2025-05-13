@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation"; // <- tambahkan ini
 
 export default function Navbar() {
@@ -14,7 +15,6 @@ export default function Navbar() {
     { label: "About", href: "/about" },
     { label: "Work Experience", href: "/work-experience" },
     { label: "Projects", href: "/projects" },
-    { label: "Contact", href: "/contact" },
   ];
 
   const isActive = (href) => pathname === href;
@@ -24,7 +24,12 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-emerald-400">
-          Titus
+          <Image
+            src="/images/logo.png"
+            alt="Profile"
+            width={100}
+            height={100}
+          />
         </Link>
 
         {/* Desktop Menu */}
