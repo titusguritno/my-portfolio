@@ -26,139 +26,58 @@ const About = () => {
               to create clean, functional, and user-friendly interfaces.
             </p>
 
-            <p className="text-slate-300">
-              <span className="font-semibold text-white">Education : </span>{" "}
+            <div className="text-slate-300">
+              <span className="font-semibold text-white">Education:</span>
               <p>Sanata Dharma University 2020 - 2024</p>
-              <p>Bachelor's Degree of Informatics</p>
-              <p>GPA: 3.30 </p>
-            </p>
-            <p className="text-slate-300">
-              <span className="font-semibold text-white">Skills : </span>
-              <p>• Programming Languages: Java, JavaScript, PHP, HTML, CSS.</p>•
-              Databases: PostgreSQL, MySQL • Tools & Frameworks: Next.js,
-              Socket.IO, OneSimulator, Prisma, GitHub, Wireshark
-              <p>• UI Design: Figma, Canva, Framer, Tailwind CSS, Shadcn UI</p>•
-              Networking: Network configuration, architecture, cryptography,
-              Microsoft Office, LAN, troubleshooting, computer hardware{" "}
-              <p>
-                • Soft Skills: Adaptable, innovative, communicative,
-                multitasker, critical thinker, and results-driven
-              </p>
-            </p>
+              <p>Bachelor's Degree in Informatics</p>
+              <p>GPA: 3.30</p>
+            </div>
+
+            <div className="text-slate-300">
+              <span className="font-semibold text-white">Skills:</span>
+              <ul className="list-disc pl-6">
+                <li>Programming Languages: Java, JavaScript, PHP, HTML, CSS</li>
+                <li>Databases: PostgreSQL, MySQL</li>
+                <li>
+                  Tools & Frameworks: Next.js, Socket.IO, OneSimulator, Prisma,
+                  GitHub, Wireshark
+                </li>
+                <li>
+                  UI Design: Figma, Canva, Framer, Tailwind CSS, Shadcn UI
+                </li>
+                <li>
+                  Networking: Network configuration, architecture, cryptography,
+                  Microsoft Office, LAN, troubleshooting, computer hardware
+                </li>
+                <li>
+                  Soft Skills: Adaptable, innovative, communicative,
+                  multitasker, critical thinker, and results-driven
+                </li>
+              </ul>
+            </div>
 
             {/* Galeri dengan card */}
             <div className="mt-6">
               <h3 className="text-xl font-semibold text-emerald-400 text-center">
-                My Galery
+                My Gallery
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-                {/* Card 1 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg flex justify-center">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal1.jpg"
-                      alt="Project 1"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 2 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal2.jpg"
-                      alt="Project 2"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 3 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal3.jpg"
-                      alt="Project 3"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 4 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal4.jpg"
-                      alt="Project 4"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 5 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal5.jpg"
-                      alt="Project 5"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 6 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg flex justify-center">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal6.jpg"
-                      alt="Project 6"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 7 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal7.jpg"
-                      alt="Project 6"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 8 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal8.jpg"
-                      alt="Project 6"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
-
-                {/* Card 9 */}
-                <Card className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-                  <div className="relative w-full h-48">
-                    <Image
-                      src="/images/galery/gal9.jpg"
-                      alt="Project 6"
-                      layout="fill"
-                      className="object-cover w-full h-full rounded-t-lg"
-                    />
-                  </div>
-                </Card>
+                {/* Gallery Cards */}
+                {[...Array(9)].map((_, index) => (
+                  <Card
+                    key={index}
+                    className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg"
+                  >
+                    <div className="relative w-full h-48">
+                      <Image
+                        src={`/images/galery/gal${index + 1}.jpg`}
+                        alt={`Project ${index + 1}`}
+                        layout="fill"
+                        className="object-cover w-full h-full rounded-t-lg"
+                      />
+                    </div>
+                  </Card>
+                ))}
               </div>
             </div>
           </div>
