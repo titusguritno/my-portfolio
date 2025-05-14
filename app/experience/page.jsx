@@ -106,14 +106,14 @@ const Experience = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-slate-700 text-white rounded-2xl overflow-hidden shadow-md">
               <div
-                className="relative w-full h-48 cursor-pointer"
+                className="relative w-full h-48 overflow-hidden group cursor-pointer"
                 onClick={() => setModalImage("/images/experience/Magang.jpg")}
               >
                 <Image
                   src="/images/experience/Magang.jpg"
                   alt="work-1"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -147,7 +147,7 @@ const Experience = () => {
 
             <Card className="bg-slate-700 text-white rounded-2xl overflow-hidden shadow-md">
               <div
-                className="relative w-full h-48 cursor-pointer"
+                className="relative w-full h-48 overflow-hidden group cursor-pointer"
                 onClick={() =>
                   setModalImage("/images/experience/Asistensi.jpg")
                 }
@@ -156,7 +156,7 @@ const Experience = () => {
                   src="/images/experience/Asistensi.jpg"
                   alt="work-2"
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
