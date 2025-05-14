@@ -21,7 +21,6 @@ const Experience = () => {
             Organizational Experience
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Example Card */}
             <Card className="bg-slate-700 text-white">
               <div
                 className="relative w-full h-48 overflow-hidden group cursor-pointer"
@@ -119,7 +118,6 @@ const Experience = () => {
               </div>
               <CardHeader>
                 <CardTitle className="text-xl">
-                  {" "}
                   Web Developer | Kalurahan Pringombo
                 </CardTitle>
               </CardHeader>
