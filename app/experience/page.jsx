@@ -14,7 +14,7 @@ const Experience = () => {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-20 bg-slate-800 text-white min-h-screen">
+      <main className="w-full px-6 py-28 bg-slate-800 text-white min-h-screen">
         {/* Organizational Experience */}
         <section className="max-w-6xl mx-auto mb-20">
           <h2 className="text-4xl font-bold text-emerald-400 mb-8">
