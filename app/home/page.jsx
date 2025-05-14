@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-28 bg-gradient-to-r from-slate-800 via-slate-900 to-black text-white min-h-screen flex justify-center">
+      <main className="w-full px-6 py-28 pb-32 bg-gradient-to-r from-slate-800 via-slate-900 to-black text-white min-h-screen flex justify-center overflow-hidden">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Left Side: Text */}
           <div className="flex-1 text-center md:text-left">
@@ -68,15 +68,17 @@ export default function Home() {
           </div>
 
           {/* Right Side: Profile Image */}
-          <div className="flex-1 relative">
-            <div className="w-100 h-100 mx-auto relative z-10 rounded-xl overflow-hidden border-8 border-gradient-to-r from-emerald-400 to-teal-500 shadow-xl transform hover:scale-110 transition-all duration-300 ease-in-out">
-              <Image
-                src="/images/bio.jpg"
-                alt="Profile"
-                width={320}
-                height={320}
-                className="object-cover w-full h-full"
-              />
+          <div className="flex-1 w-full max-w-xs mx-auto relative group">
+            <div className="rounded-2xl p-1 bg-gradient-to-br from-emerald-400 via-cyan-400 to-teal-500 shadow-xl transition-transform duration-300 group-hover:scale-105">
+              <div className="rounded-xl overflow-hidden bg-slate-900">
+                <Image
+                  src="/images/bio.jpg"
+                  alt="Profile"
+                  width={320}
+                  height={320}
+                  className="object-cover w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
             </div>
           </div>
         </div>
