@@ -49,7 +49,7 @@ const Experience = () => {
             <Card className="bg-slate-700 text-white">
               <div
                 className="relative w-full h-48 overflow-hidden group cursor-pointer"
-                onClick={() => setModalImage("/images/experience/HMIF.jpg")}
+                onClick={() => setModalImage("/images/experience/hmif.jpg")}
               >
                 <Image
                   src="/images/experience/hmif.jpg"
