@@ -52,7 +52,7 @@ const Experience = () => {
                 onClick={() => setModalImage("/images/experience/HMIF.jpg")}
               >
                 <Image
-                  src="/images/experience/HMIF.jpg"
+                  src="/images/experience/hmif.jpg"
                   alt="Organization 2"
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
