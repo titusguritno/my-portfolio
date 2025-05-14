@@ -9,58 +9,52 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-20 bg-cyan-950 text-white min-h-screen">
+      <main className="w-full px-6 py-28 bg-gradient-to-r from-slate-800 via-slate-900 to-black text-white min-h-screen flex justify-center">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
-          {/* Kiri: Teks */}
-          <div className="flex-1">
-            <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-tight mb-2">
+          {/* Left Side: Text */}
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">
               Hi, I'm <span className="text-emerald-400">Titus Guritno</span>
             </h1>
-            <p className="text-lg md:text-xl font-semibold text-emerald-400 mb-6">
-              Front End Developer <span className="text-white">|</span> Web
-              Designer
-            </p>
-            <p className="text-slate-300 mb-6 max-w-lg">
-              I'm an experienced Front-End Developer specialising in UI/UX
-              design and responsive web application development. I transform
-              complex ideas into intuitive and engaging interfaces, focusing on
-              optimal user experience. I also have a strong understanding of
-              network management and support web applications with reliable,
-              secure and efficient infrastructure.
+            <p className="text-lg md:text-2xl font-semibold text-emerald-400 mb-6">
+              Front-End Developer <span className="text-white">|</span> Web
+              Designer | IT Network Specialist
             </p>
 
-            {/* Tombol ke Google Drive */}
+            {/* CV Button */}
             <a
               href="https://drive.google.com/file/d/1Q16jGP8nHUrSCN5Xdm-UDzij7SJJ3w86/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-colors mb-6"
+              className="inline-flex items-center bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-3 rounded-md text-lg font-medium transition-colors mb-8 transform hover:scale-105"
             >
-              Download CV
+              Get CV
             </a>
 
-            {/* Media Sosial */}
-            <div className="flex items-center gap-4 text-slate-300">
+            {/* Social Media Links */}
+            <div className="flex justify-center md:justify-start items-center gap-6 text-slate-300">
+              <p className="text-lg">Follow me:</p>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-pink-500 transition-colors"
               >
-                <FaInstagram size={24} />
+                <FaInstagram size={28} />
               </a>
               <a
-                href="guritnotitus@gmail.com"
+                href="mailto:guritnotitus@gmail.com"
                 className="hover:text-red-400 transition-colors"
               >
-                <Mail size={24} />
+                <Mail size={28} />
               </a>
               <a
                 href="https://github.com/titusguritno"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="hover:text-gray-400 transition-colors"
               >
-                <FaGithub size={24} />
+                <FaGithub size={28} />
               </a>
               <a
                 href="https://www.linkedin.com/in/titus-guritno-03201228b"
@@ -68,20 +62,20 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="hover:text-blue-500 transition-colors"
               >
-                <FaLinkedin size={24} />
+                <FaLinkedin size={28} />
               </a>
             </div>
           </div>
 
-          {/* Kanan: Gambar */}
+          {/* Right Side: Profile Image */}
           <div className="flex-1 relative">
-            <div className="w-72 h-72 mx-auto relative z-10 rounded-full overflow-hidden border-4 border-emerald-400 rotate-12">
+            <div className="w-100 h-100 mx-auto relative z-10 rounded-xl overflow-hidden border-8 border-gradient-to-r from-emerald-400 to-teal-500 shadow-xl transform hover:scale-110 transition-all duration-300 ease-in-out">
               <Image
-                src="/images/profil.jpg"
+                src="/images/bio.jpg"
                 alt="Profile"
-                width={300}
-                height={300}
-                className="object-cover w-full h-full -rotate-12"
+                width={320}
+                height={320}
+                className="object-cover w-full h-full"
               />
             </div>
           </div>
