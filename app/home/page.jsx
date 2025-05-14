@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-20 bg-gradient-to-r from-slate-800 via-slate-900 to-black text-white min-h-screen">
+      <main className="w-full px-6 py-28 bg-gradient-to-r from-slate-800 via-slate-900 to-black text-white min-h-screen flex justify-center">
         <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
           {/* Left Side: Text */}
           <div className="flex-1 text-center md:text-left">

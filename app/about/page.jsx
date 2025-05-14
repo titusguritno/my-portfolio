@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <main className="w-full px-6 py-20 bg-slate-800 text-white min-h-screen">
+      <main className="w-full px-6 py-28 bg-slate-800 text-white min-h-screen">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start gap-12">
           {/* Biografi dan Galeri */}
           <div className="flex-1 text-left space-y-4">
