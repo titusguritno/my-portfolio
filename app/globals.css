@@ -112,6 +112,12 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
+.border-animation {
+  background-image: linear-gradient(270deg, #10b981, #06b6d4, #14b8a6, #10b981);
+  animation: gradientMove 5s ease infinite;
+  background-size: 300% 300%;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;

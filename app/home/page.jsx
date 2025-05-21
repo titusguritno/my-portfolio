@@ -67,17 +67,20 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Right Side: Profile Image */}
+          {/* Right Side: Profile Image with Animation */}
           <div className="flex-1 w-full max-w-xs mx-auto relative group">
-            <div className="rounded-2xl p-1 bg-gradient-to-br from-emerald-400 via-cyan-400 to-teal-500 shadow-xl transition-transform duration-300 group-hover:scale-105">
-              <div className="rounded-xl overflow-hidden bg-slate-900">
+            <div className="w-[320px] h-[320px] p-[3px] bg-gradient-to-br from-emerald-400 via-cyan-400 to-teal-500 rounded-xl shadow-2xl transition-transform duration-300 group-hover:scale-105">
+              <div className="w-full h-full bg-slate-900 rounded-lg overflow-hidden relative">
                 <Image
                   src="/images/bio.jpg"
                   alt="Profile"
                   width={320}
                   height={320}
-                  className="object-cover w-full h-auto transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-110"
                 />
+
+                {/* Animated Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-emerald-500/10 to-transparent animate-pulse" />
               </div>
             </div>
           </div>
