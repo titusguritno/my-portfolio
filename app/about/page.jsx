@@ -68,12 +68,13 @@ const About = () => {
                     key={index}
                     className="w-full bg-gray-700 rounded-lg overflow-hidden shadow-lg"
                   >
-                    <div className="relative w-full h-48">
+                    <div className="relative w-full h-48 overflow-hidden group cursor-pointer">
                       <Image
                         src={`/images/galery/gal${index + 1}.jpg`}
                         alt={`Project ${index + 1}`}
                         layout="fill"
-                        className="object-cover w-full h-full rounded-t-lg"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                     </div>
                   </Card>
